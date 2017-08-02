@@ -24,7 +24,7 @@ export default class Nav extends Component {
                                 transform: [ 
                                              {translate: this.props.translate}, 
                                              {rotateY: this.props.rotateY},
-                                             ],
+                                           ],
                             }}
                 />
             </VrButton>

@@ -1,20 +1,21 @@
 {
-
-  "projectName": "myProject",
+  "projectName": "NewProject",
   "currScene": "light-show",
   "currFrame": "front",
-  "loadURL": "http://localhost:8081/vr/?149947034701714994703573131499470360195",
+  "currTemplate": "TextFrame",
+  "loadURL": "http://localhost:8081/vr/?1499811614644",
+  "projectPath": "./reactVR/obj.json",
   "scenes": {
-    "chess world": {
-      "imageURL": "chess-world.jpg",
+    "island-garden": {
+      "imageURL": "island-garden.jpg",
       "frames": {
         "front": {
           "template": "TextFrame",
-          "title": "Front Title",
+          "title": "enter title",
           "subtitle": "FRONT FRONT FRONT",
           "navleft": "left",
           "navright": "right",
-          "text": "Front Text"
+          "text": "hello"
         },
         "right": {
           "template": "TextFrame",
@@ -24,14 +25,14 @@
           "navright": "right"
         },
         "back": {
-          "template": "TextFrame",
-          "title": "Back Title",
+          "template": "None",
+          "title": "Hello World update all the time?",
           "text": "BACK BACK BACK",
           "navleft": "left",
           "navright": "right"
         },
         "left": {
-          "template": "TextFrame",
+          "template": "TitleFrame",
           "title": "Hello World",
           "text": "LEFT LEFT LEFT",
           "navleft": "left",
@@ -39,16 +40,15 @@
         }
       }
     },
-    "winter outdoor": {
+    "winter-outdoor": {
       "imageURL": "winter-outdoor.jpg",
       "frames": {
         "front": {
           "template": "TitleFrame",
-          "title": "This is some new text!",
+          "title": "WINTERTITLE",
           "subtitle": "FRONT FRONT FRONT",
           "navleft": "left",
-          "navright": "right",
-          "text": ""
+          "navright": "right"
         },
         "right": {
           "template": "TextFrame",
@@ -58,7 +58,7 @@
           "navright": "right"
         },
         "back": {
-          "template": "TextFrame",
+          "template": "TitleFrame",
           "title": "SNOWMAN",
           "text": "BACK BACK BACK",
           "navleft": "left",
@@ -77,30 +77,30 @@
       "imageURL": "light-show.jpg",
       "frames": {
         "front": {
-          "template": "TitleFrame",
-          "title": "This is some new text!",
+          "template": "TextFrame",
+          "title": "enter title",
           "subtitle": "FRONT FRONT FRONT",
           "navleft": "left",
           "navright": "right",
-          "text": ""
+          "text": "hello"
         },
         "right": {
           "template": "TextFrame",
-          "title": "WINTER",
+          "title": "Hello World",
           "text": "RIGHT RIGHT RIGHT",
           "navleft": "left",
           "navright": "right"
         },
         "back": {
-          "template": "TextFrame",
-          "title": "SNOWMAN",
+          "template": "None",
+          "title": "Hello World update all the time?",
           "text": "BACK BACK BACK",
           "navleft": "left",
           "navright": "right"
         },
         "left": {
-          "template": "TextFrame",
-          "title": "WINTER",
+          "template": "TitleFrame",
+          "title": "Hello World",
           "text": "LEFT LEFT LEFT",
           "navleft": "left",
           "navright": "right"
@@ -108,6 +108,5 @@
       }
     }
   },
-  "currTemplate": "TextFrame",
   "publishingStatus": "Publish Project"
 }

@@ -11,8 +11,8 @@ export default class reactVR extends Component {
     super();
     this.state = data;
     this.state.sceneRotateY = data.currFrame === 'front' ? new Animated.Value(0) :
-      data.currFrame === 'right' ? new Animated.Value(90) :
-        data.currFrame === 'back' ? new Animated.Value(180) : new Animated.Value(270);
+                              data.currFrame === 'right' ? new Animated.Value(90) :
+                              data.currFrame === 'back' ? new Animated.Value(180) : new Animated.Value(270);
     this.state.totalRotation = data.currFrame === 'front' ? 0 :
                                data.currFrame === 'right' ? 90 :
                                data.currFrame === 'back'  ? 180 : 270;
@@ -54,7 +54,7 @@ export default class reactVR extends Component {
 
   navigateY(frameDeg, direction) {
     frameDeg = frameDeg === 90 ? 270 :
-      frameDeg === 270 ? 90 : frameDeg;
+               frameDeg === 270 ? 90 : frameDeg;
 
     let pitch = VrHeadModel.yawPitchRoll()[1];
     let negPitch = -pitch;
@@ -83,17 +83,13 @@ export default class reactVR extends Component {
       }
     ).start();
 
-
     let newState = Object.assign({}, this.state);
     newState.totalRotation = this.state.totalRotation + distToRot;
     this.setState(newState);
-
-
   }
 
   componentDidMount() {
     VrHeadModel.yawPitchRoll();
-
   }
 
   render() {
@@ -116,11 +112,9 @@ export default class reactVR extends Component {
     {/*build four frames*/ }
     let frames = [];
     for (let key in this.state.scenes[this.state.currScene].frames) {
-
       let frame = this.state.scenes[this.state.currScene].frames[key];
       if (frame.template === 'TitleFrame') {
         frames.push(
-
           <TitleFrame key={key}
             navigateY={this.navigateY}
             transformation={this.state[key + 'Transformation']}

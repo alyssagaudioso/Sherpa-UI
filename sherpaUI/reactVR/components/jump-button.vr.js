@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text, VrButton, Image, asset } from 'react-vr';
 
-
 export default class JumpButton extends Component {
 
   render() {

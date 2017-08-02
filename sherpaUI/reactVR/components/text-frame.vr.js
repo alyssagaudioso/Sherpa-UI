@@ -21,8 +21,6 @@ export default class TextFrame extends Component {
                      }}>
           {/*TITLE*/}
           <Text style={{
-                  margin: 0,
-                  padding: 0,
                   fontSize: .5,
                   color: 'white',
                 }}>
